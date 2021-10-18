@@ -5,8 +5,10 @@
     <classes>
       <class name="qualitest.AppTest">
         <methods>
+          <include name="login3"/>
+          <include name="kudosFromMe"/>
           <include name="a"/>
-          <include name="kudosSearch"/>
+          <include name="searchKudos"/>
         </methods>
       </class> <!-- qualitest.AppTest -->
     </classes>

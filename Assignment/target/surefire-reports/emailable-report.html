@@ -9,19 +9,24 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,998</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">35,103</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">qualitest.AppTest</td><td><a href="#m0">kudosSearch</a></td><td rowspan="1">1634492606747</td><td rowspan="1">4032</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">qualitest.AppTest</td><td><a href="#m1">homePageColors</a></td><td rowspan="1">1634492605012</td><td rowspan="1">1732</td></tr><tr class="passedeven"><td><a href="#m2">login1</a></td><td rowspan="1">1634492610789</td><td rowspan="1">3700</td></tr><tr class="passedeven"><td><a href="#m3">login2</a></td><td rowspan="1">1634492614489</td><td rowspan="1">813</td></tr><tr class="passedeven"><td><a href="#m4">login3</a></td><td rowspan="1">1634492615302</td><td rowspan="1">10505</td></tr><tr class="passedeven"><td><a href="#m5">verifyTitle</a></td><td rowspan="1">1634492625807</td><td rowspan="1">682</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">qualitest.AppTest</td><td><a href="#m0">kudosFromMe</a></td><td rowspan="1">1634551527563</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m1">searchKudos</a></td><td rowspan="1">1634551527268</td><td rowspan="1">197</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">qualitest.AppTest</td><td><a href="#m2">homePageColors</a></td><td rowspan="1">1634551526397</td><td rowspan="1">871</td></tr><tr class="passedeven"><td><a href="#m3">login1</a></td><td rowspan="1">1634551496423</td><td rowspan="1">10510</td></tr><tr class="passedeven"><td><a href="#m4">login2</a></td><td rowspan="1">1634551506940</td><td rowspan="1">1219</td></tr><tr class="passedeven"><td><a href="#m5">login3</a></td><td rowspan="1">1634551508161</td><td rowspan="1">16633</td></tr><tr class="passedeven"><td><a href="#m6">sendKudos</a></td><td rowspan="1">1634551527550</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m7">verifyTitle</a></td><td rowspan="1">1634551524795</td><td rowspan="1">1599</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">qualitest.AppTest#kudosSearch</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),&apos;Kudos Search&apos;)]&quot;}
+<h2>Surefire test</h2><h3 id="m0">qualitest.AppTest#kudosFromMe</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Cannot inject @Test annotated Method [kudosFromMe] with [interface org.openqa.selenium.WebDriver].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">qualitest.AppTest#searchKudos</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@onclick=&apos;searchKudosByUser()&apos;]&quot;}
   (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.0.0-rc-3&apos;, revision: &apos;5fe1af712f&apos;
 System info: host: &apos;DESKTOP-PSRE6VL&apos;, ip: &apos;192.168.29.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6819980773d4dc68b8743b29de245202, findElement {using=xpath, value=//*[contains(text(),&apos;Kudos Search&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\megha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59176}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59176/devtoo..., se:cdpVersion: 94.0.4606.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6819980773d4dc68b8743b29de245202
+Command: [5492fb9c7002fd87e214d723b19d1007, findElement {using=xpath, value=//a[@onclick=&apos;searchKudosByUser()&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\megha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57881}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57881/devtoo..., se:cdpVersion: 94.0.4606.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5492fb9c7002fd87e214d723b19d1007
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -33,14 +38,15 @@ Session ID: 6819980773d4dc68b8743b29de245202
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at pageObjects.ActivityPage.getKudosSearch(ActivityPage.java:51)
-	at qualitest.AppTest.kudosSearch(AppTest.java:114)
+	at pageObjects.KudosSearch.getKudosSearch(KudosSearch.java:14)
+	at qualitest.AppTest.searchKudos(AppTest.java:118)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">qualitest.AppTest#homePageColors</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">qualitest.AppTest#login1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">qualitest.AppTest#login2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">qualitest.AppTest#login3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">qualitest.AppTest#verifyTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">qualitest.AppTest#homePageColors</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">qualitest.AppTest#login1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">qualitest.AppTest#login2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">qualitest.AppTest#login3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">qualitest.AppTest#sendKudos</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">qualitest.AppTest#verifyTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

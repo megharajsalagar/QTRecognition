@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="qualitest.AppTest" class="method navigator-link" hash-for-method="kudosSearch">kudosSearch</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="qualitest.AppTest" class="method navigator-link" hash-for-method="kudosFromMe">kudosFromMe</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="qualitest.AppTest" class="method navigator-link" hash-for-method="searchKudos">searchKudos</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -138,6 +143,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="qualitest.AppTest" class="method navigator-link" hash-for-method="sendKudos">sendKudos</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="qualitest.AppTest" class="method navigator-link" hash-for-method="verifyTitle">verifyTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -161,18 +171,31 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="kudosSearch">
-                  </a> <!-- kudosSearch -->
-                  <span class="method-name">kudosSearch</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),&apos;Kudos Search&apos;)]&quot;}
+                  <a name="kudosFromMe">
+                  </a> <!-- kudosFromMe -->
+                  <span class="method-name">kudosFromMe</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Cannot inject @Test annotated Method [kudosFromMe] with [interface org.openqa.selenium.WebDriver].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchKudos">
+                  </a> <!-- searchKudos -->
+                  <span class="method-name">searchKudos</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@onclick=&apos;searchKudosByUser()&apos;]&quot;}
   (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.0.0-rc-3&apos;, revision: &apos;5fe1af712f&apos;
 System info: host: &apos;DESKTOP-PSRE6VL&apos;, ip: &apos;192.168.29.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6819980773d4dc68b8743b29de245202, findElement {using=xpath, value=//*[contains(text(),&apos;Kudos Search&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\megha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59176}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59176/devtoo..., se:cdpVersion: 94.0.4606.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6819980773d4dc68b8743b29de245202
+Command: [5492fb9c7002fd87e214d723b19d1007, findElement {using=xpath, value=//a[@onclick=&apos;searchKudosByUser()&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\megha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57881}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57881/devtoo..., se:cdpVersion: 94.0.4606.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5492fb9c7002fd87e214d723b19d1007
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -184,8 +207,8 @@ Session ID: 6819980773d4dc68b8743b29de245202
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at pageObjects.ActivityPage.getKudosSearch(ActivityPage.java:51)
-	at qualitest.AppTest.kudosSearch(AppTest.java:114)
+	at pageObjects.KudosSearch.getKudosSearch(KudosSearch.java:14)
+	at qualitest.AppTest.searchKudos(AppTest.java:118)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 37 stack frames
 </div> <!-- stack-trace -->
@@ -225,6 +248,13 @@ Session ID: 6819980773d4dc68b8743b29de245202
                   <a name="login3">
                   </a> <!-- login3 -->
                   <span class="method-name">login3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendKudos">
+                  </a> <!-- sendKudos -->
+                  <span class="method-name">sendKudos</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -287,36 +317,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login3')
 data.setCell(0, 2, 'qualitest.AppTest')
-data.setCell(0, 3, 10505);
+data.setCell(0, 3, 16633);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'kudosSearch')
+data.setCell(1, 1, 'login1')
 data.setCell(1, 2, 'qualitest.AppTest')
-data.setCell(1, 3, 4032);
+data.setCell(1, 3, 10510);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'login1')
+data.setCell(2, 1, 'verifyTitle')
 data.setCell(2, 2, 'qualitest.AppTest')
-data.setCell(2, 3, 3700);
+data.setCell(2, 3, 1599);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'homePageColors')
+data.setCell(3, 1, 'login2')
 data.setCell(3, 2, 'qualitest.AppTest')
-data.setCell(3, 3, 1732);
+data.setCell(3, 3, 1219);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'login2')
+data.setCell(4, 1, 'homePageColors')
 data.setCell(4, 2, 'qualitest.AppTest')
-data.setCell(4, 3, 813);
+data.setCell(4, 3, 871);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyTitle')
+data.setCell(5, 1, 'searchKudos')
 data.setCell(5, 2, 'qualitest.AppTest')
-data.setCell(5, 3, 682);
+data.setCell(5, 3, 197);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'sendKudos')
+data.setCell(6, 2, 'qualitest.AppTest')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'kudosFromMe')
+data.setCell(7, 2, 'qualitest.AppTest')
+data.setCell(7, 3, 0);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -348,30 +386,34 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <span class="method-name">login1</span>
+                <span class="method-start">3953 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login2</span>
+                <span class="method-start">14470 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login3</span>
+                <span class="method-start">15691 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyTitle</span>
+                <span class="method-start">32325 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">homePageColors</span>
-                <span class="method-start">3508 ms</span>
+                <span class="method-start">33927 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">kudosSearch</span>
-                <span class="method-start">5243 ms</span>
+                <span class="method-name">searchKudos</span>
+                <span class="method-start">34798 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">login1</span>
-                <span class="method-start">9285 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">login2</span>
-                <span class="method-start">12985 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">login3</span>
-                <span class="method-start">13798 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyTitle</span>
-                <span class="method-start">24303 ms</span>
+                <span class="method-name">sendKudos</span>
+                <span class="method-start">35080 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
