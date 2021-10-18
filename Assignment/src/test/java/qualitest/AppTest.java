@@ -140,16 +140,18 @@ public class AppTest extends App
 	  public void sendKudos() throws InterruptedException { 
 	   //Perform the sendKudos operation
 	  
-		/*
-		 * SendKudos.getSendKudosButton(driver).click(); Thread.sleep(3000);
-		 * SendKudos.getEmail(driver).
-		 * sendKeys("Kushalappa P A  (kushalappa.pa@qualitestgroup.com)");
-		 * List<WebElement> list=SendKudos.getTrophyList(driver); list.get(0).click();
-		 * 
-		 * SendKudos.getComment(driver).
-		 * sendKeys("Excelent work is going on keep it up!"); Thread.sleep(2000);
-		 * SendKudos.getKudosButton(driver).click(); Thread.sleep(2000);
-		 */
+		
+		  SendKudos.getSendKudosButton(driver).click();
+		  Thread.sleep(3000);
+		  SendKudos.getEmail(driver).
+		  sendKeys("Kushalappa P A  (kushalappa.pa@qualitestgroup.com)");
+		  List<WebElement> list=SendKudos.getTrophyList(driver); 
+		  list.get(0).click();
+		  
+		  SendKudos.getComment(driver).sendKeys("Excelent work is going on keep it up!");
+		  Thread.sleep(2000);
+		  SendKudos.getKudosButton(driver).click(); Thread.sleep(2000);
+		 
 	  
 	  }
 	  
