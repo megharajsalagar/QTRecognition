@@ -17,6 +17,7 @@ public class ActivityPage {
 	public static WebElement getImage(WebDriver driver) {
 		return driver.findElement(image);
 	}
+	
 
 	
 }

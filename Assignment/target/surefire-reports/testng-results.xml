@@ -2,52 +2,52 @@
 <testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-20T13:20:12 IST" name="Surefire suite" finished-at="2021-10-20T13:20:48 IST" duration-ms="35731">
+  <suite started-at="2021-10-20T19:27:08 IST" name="Surefire suite" finished-at="2021-10-20T19:27:54 IST" duration-ms="46153">
     <groups>
     </groups>
-    <test started-at="2021-10-20T13:20:12 IST" name="Surefire test" finished-at="2021-10-20T13:20:48 IST" duration-ms="35731">
+    <test started-at="2021-10-20T19:27:08 IST" name="Surefire test" finished-at="2021-10-20T19:27:54 IST" duration-ms="46153">
       <class name="qualitest.AppTest">
-        <test-method is-config="true" signature="a()[pri:0, instance:qualitest.AppTest@6dee4f1b]" started-at="2021-10-20T13:20:12 IST" name="a" finished-at="2021-10-20T13:20:15 IST" duration-ms="2645" status="PASS">
+        <test-method is-config="true" signature="a()[pri:0, instance:qualitest.AppTest@176b3f44]" started-at="2021-10-20T19:27:08 IST" name="a" finished-at="2021-10-20T19:27:11 IST" duration-ms="2723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- a -->
-        <test-method signature="homePageColors()[pri:0, instance:qualitest.AppTest@6dee4f1b]" started-at="2021-10-20T13:20:15 IST" name="homePageColors" finished-at="2021-10-20T13:20:17 IST" duration-ms="2084" status="PASS">
+        <test-method signature="homePageColors()[pri:0, instance:qualitest.AppTest@176b3f44]" started-at="2021-10-20T19:27:11 IST" name="homePageColors" finished-at="2021-10-20T19:27:13 IST" duration-ms="2274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageColors -->
-        <test-method signature="login1()[pri:0, instance:qualitest.AppTest@6dee4f1b]" started-at="2021-10-20T13:20:17 IST" name="login1" finished-at="2021-10-20T13:20:21 IST" duration-ms="4237" status="PASS">
+        <test-method signature="login1()[pri:0, instance:qualitest.AppTest@176b3f44]" started-at="2021-10-20T19:27:13 IST" name="login1" finished-at="2021-10-20T19:27:17 IST" duration-ms="4400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login1 -->
-        <test-method signature="login2()[pri:0, instance:qualitest.AppTest@6dee4f1b]" started-at="2021-10-20T13:20:21 IST" name="login2" finished-at="2021-10-20T13:20:22 IST" duration-ms="750" status="PASS">
+        <test-method signature="login2()[pri:0, instance:qualitest.AppTest@176b3f44]" started-at="2021-10-20T19:27:17 IST" name="login2" finished-at="2021-10-20T19:27:20 IST" duration-ms="2992" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login2 -->
-        <test-method signature="login3()[pri:0, instance:qualitest.AppTest@6dee4f1b]" started-at="2021-10-20T13:20:22 IST" name="login3" finished-at="2021-10-20T13:20:29 IST" duration-ms="7389" status="PASS">
+        <test-method signature="login3()[pri:0, instance:qualitest.AppTest@176b3f44]" started-at="2021-10-20T19:27:20 IST" name="login3" finished-at="2021-10-20T19:27:34 IST" duration-ms="13686" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login3 -->
-        <test-method signature="searchKudos()[pri:0, instance:qualitest.AppTest@6dee4f1b]" started-at="2021-10-20T13:20:29 IST" name="searchKudos" finished-at="2021-10-20T13:20:35 IST" duration-ms="5480" status="PASS">
+        <test-method signature="searchKudos()[pri:0, instance:qualitest.AppTest@176b3f44]" started-at="2021-10-20T19:27:34 IST" name="searchKudos" finished-at="2021-10-20T19:27:39 IST" duration-ms="4422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchKudos -->
-        <test-method signature="seeKudosFromMe()[pri:0, instance:qualitest.AppTest@6dee4f1b]" started-at="2021-10-20T13:20:35 IST" name="seeKudosFromMe" finished-at="2021-10-20T13:20:37 IST" duration-ms="2321" status="PASS">
+        <test-method signature="seeKudosFromMe()[pri:0, instance:qualitest.AppTest@176b3f44]" started-at="2021-10-20T19:27:39 IST" name="seeKudosFromMe" finished-at="2021-10-20T19:27:41 IST" duration-ms="2351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seeKudosFromMe -->
-        <test-method signature="seeKudosToMe()[pri:0, instance:qualitest.AppTest@6dee4f1b]" started-at="2021-10-20T13:20:37 IST" name="seeKudosToMe" finished-at="2021-10-20T13:20:39 IST" duration-ms="2124" status="PASS">
+        <test-method signature="seeKudosToMe()[pri:0, instance:qualitest.AppTest@176b3f44]" started-at="2021-10-20T19:27:41 IST" name="seeKudosToMe" finished-at="2021-10-20T19:27:43 IST" duration-ms="2118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seeKudosToMe -->
-        <test-method signature="sendKudos()[pri:0, instance:qualitest.AppTest@6dee4f1b]" started-at="2021-10-20T13:20:39 IST" name="sendKudos" finished-at="2021-10-20T13:20:47 IST" duration-ms="7495" status="PASS">
+        <test-method signature="sendKudos()[pri:0, instance:qualitest.AppTest@176b3f44]" started-at="2021-10-20T19:27:43 IST" name="sendKudos" finished-at="2021-10-20T19:27:53 IST" duration-ms="9794" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendKudos -->
-        <test-method signature="verifyTitle()[pri:0, instance:qualitest.AppTest@6dee4f1b]" started-at="2021-10-20T13:20:47 IST" name="verifyTitle" finished-at="2021-10-20T13:20:47 IST" duration-ms="788" status="PASS">
+        <test-method signature="verifyTitle()[pri:0, instance:qualitest.AppTest@176b3f44]" started-at="2021-10-20T19:27:53 IST" name="verifyTitle" finished-at="2021-10-20T19:27:54 IST" duration-ms="1022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method is-config="true" signature="driverExit()[pri:0, instance:qualitest.AppTest@6dee4f1b]" started-at="2021-10-20T13:20:47 IST" name="driverExit" finished-at="2021-10-20T13:20:48 IST" duration-ms="360" status="PASS">
+        <test-method is-config="true" signature="driverExit()[pri:0, instance:qualitest.AppTest@176b3f44]" started-at="2021-10-20T19:27:54 IST" name="driverExit" finished-at="2021-10-20T19:27:54 IST" duration-ms="283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverExit -->

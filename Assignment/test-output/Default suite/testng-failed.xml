@@ -6,8 +6,8 @@
       <class name="qualitest.AppTest">
         <methods>
           <include name="a"/>
-          <include name="seeKudosFromMe"/>
           <include name="searchKudos"/>
+          <include name="driverExit"/>
         </methods>
       </class> <!-- qualitest.AppTest -->
     </classes>
