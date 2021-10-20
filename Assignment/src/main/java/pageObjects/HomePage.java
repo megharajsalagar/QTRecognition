@@ -10,7 +10,7 @@ public class HomePage {
 	static By pass=By.name("pass");
 	static By button=By.xpath("//*[text()='Login']");
 	static By bgcolor=By.xpath("//div[@class='myHeading']");
-			
+		
 
 	public  static WebElement getUsername(WebDriver driver) {
 		return driver.findElement(uname);

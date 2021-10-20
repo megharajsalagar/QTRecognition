@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class KudosSearch {
-	
+
 	static By kudosSearch=By.xpath("//a[@onclick='searchKudosByUser()']");
 	static By kudosSearchInput=By.id("s_e_add");
 	static By kudosSearchButton=By.xpath("//button[@onclick='kudosSearch()']");

@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class KudosToMe {
-
 	
 	static By kudosToMeButton=By.xpath("//a[@onclick='shoutOutToMe()']");
 	static By listOfKudos=By.id("shoutout_to_me");

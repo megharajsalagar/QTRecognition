@@ -5,9 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class ActivityPage {
-	
-	static By eName=By.xpath("//h5[@class='header-font-size']");
-	static By image=By.xpath("//img[@alt='Sample Image']");
+
+	private static By eName=By.xpath("//h5[@class='header-font-size']");
+	private static By image=By.xpath("//img[@alt='Sample Image']");
 	
 	
 	public static WebElement getEmployeeName(WebDriver driver) {

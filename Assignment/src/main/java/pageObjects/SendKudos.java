@@ -12,7 +12,7 @@ public class SendKudos {
 	static By trophyList=By.xpath("//div[@id='trophy_list']/div");
 	static By comment=By.id("comment");
 	static By sendKudosButton=By.xpath("//button[@class='btn btn-primary']");
-	
+	static By msg=By.xpath("//*[@id=\"display_message\"]/span");
 	public static WebElement getSendKudosButton(WebDriver driver) {
 		return driver.findElement(sendKudos);
 	}
@@ -31,6 +31,9 @@ public class SendKudos {
 	
 	public static WebElement getKudosButton(WebDriver driver) {
 		return driver.findElement(sendKudosButton);
+	}
+	public static WebElement getMsg(WebDriver driver) {
+		return driver.findElement(msg);
 	}
 	
 }

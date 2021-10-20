@@ -1,6 +1,7 @@
+pageObjects\KudosToMe.class
 pageObjects\SendKudos.class
-pageObjects\ActivityPage.class
 pageObjects\KudosFromMe.class
 pageObjects\HomePage.class
 pageObjects\KudosSearch.class
 qualitest\App.class
+pageObjects\ActivityPage.class

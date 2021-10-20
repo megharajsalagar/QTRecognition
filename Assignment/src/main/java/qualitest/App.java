@@ -11,7 +11,7 @@ public class App {
 	
 	public WebDriver driver;
 	public Properties properties;
-	
+
 	
 	public WebDriver setUp() throws IOException {
 		
